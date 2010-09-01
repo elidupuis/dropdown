@@ -1,0 +1,4 @@
+v0.3
+-added mozRemoveTitleAttr option to turn off Mozilla title attribute fix
+-updated default fade speeds (quicker)
+-general house cleaning
