@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>jQuery dropdown plugin test page</title>
+	
+	<style type="text/css" media="screen">
+		/* general prettifying */
+		body 			{ font:75%/1 verdana,arial,sans-serif; color:#333; padding:0 30px; }
+		h1 				{ clear:both; margin:2em 0 1em; }
+		a				{ color:#fff; text-decoration:none; }
+		a:hover			{ color:#ccc; }
+		textarea 		{ width:500px; height:400px; }
+		
+		
+		/* nav list style */
+		#nav			{ float:left; list-style:none; margin:0 0 2em; padding:0; }
+		
+		/* first level */
+		#nav li			{ float:left; list-style:none; display:inline; position:relative; background:#666; margin:0 1px 0 0; }
+		#nav > li a		{ display:block; padding:5px 10px; height:15px; }
+		
+		/* second level */
+		#nav li ul		{ display:none; position:absolute; top:25px; left:0; margin:0; padding:0; }
+		#nav li li		{ display:block; background:#999; float:none; width:auto; }
+		#nav li li a	{ height:auto; white-space:nowrap; }
+		
+		
+	</style>
+	
+	<script src="../jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.dropdown.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$('#nav > li').dropdown();
+		});
+	</script>
+
+</head>
+<body>
+	<h1>Example</h1>
+	
+	<ul id="nav">
+		<li><a href="#" title="test title attr">Services</a>
+			<ul>
+				<li><a href="#">Web Design</a></li>
+				<li><a href="#">Print</a></li>
+				<li><a href="#">Identity &amp; Branding</a></li>
+				<li><a href="#">Tradeshow Stuff</a></li>
+			</ul>
+		</li>
+		<li><a href="#">About</a>
+			<ul>
+				<li><a href="#">History</a></li>
+				<li><a href="#" title="anything here">Who We Are</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Legal</a></li>
+				<li><a href="#">Other Awesome Stuff</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Careers</a>
+			<ul>
+				<li><a href="#">Positions</a></li>
+				<li><a href="#">How to Apply</a></li>
+				<li><a href="#">Working Here</a></li>
+				<li><a href="#">Living in Town</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Contact</a>
+			<ul>
+				<li><a href="#">Contact Form</a></li>
+				<li><a href="#">Location</a></li>
+			</ul>
+		</li>
+	</ul>
+	
+	
+	<h1>Code</h1>
+	
+	
+	<pre>
+		<code>
+			$(document).ready(function(){
+				$('#nav > li').dropdown();
+			});
+		</code>
+	</pre>
+	
+	
+	<h1>Options</h1>
+	
+	
+
+</body>
+</html>
